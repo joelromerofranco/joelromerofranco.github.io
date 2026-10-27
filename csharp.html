@@ -3,59 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Joel Romero Franco - Desarrollador Full Stack C# (.NET)</title>
+  <title>CV Joel Romero Franco - Desarrollador Full Stack C# .NET</title>
   
-  <meta name="description" content="Curriculum Vitae de Joel Romero Franco. Desarrollador Full Stack (Frontend y Backend) orientado a C# y .NET 8. Experiencia laboral en Ciabay S.A. y formación en UNICAN FACITEC.">
+  <meta name="description" content="Currículum Vitae de Joel Romero Franco. Desarrollador Full Stack orientado a C# y .NET 8. Formación en UNICAN FACITEC y experiencia laboral en Ciabay S.A.">
   <meta name="author" content="Joel Romero Franco">
 
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
-  <!-- BARRA DE HERRAMIENTAS (SOLO EN PANTALLA) -->
+  <!-- BARRA DE HERRAMIENTAS (BOTONES DE ACCESO RÁPIDO CON ICONOS) -->
   <header class="cv-toolbar no-print">
     <div class="cv-toolbar-container">
       <div class="cv-toolbar-views">
         <span class="toolbar-label">Vistas:</span>
-        <a href="csharp.html" class="cv-tab-btn active">📄 Currículum Full Stack C# (.NET)</a>
-        <a href="java.html" class="cv-tab-btn">☕ Ver Currículum Java</a>
+        <a href="csharp.html" class="cv-tab-btn active">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <span>C# / .NET</span>
+        </a>
+        <a href="java.html" class="cv-tab-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+          <span>Java &amp; Spring</span>
+        </a>
         <a href="index.html" class="cv-tab-btn">&larr; Inicio</a>
       </div>
 
       <div class="cv-toolbar-actions">
-        <button onclick="window.print()" class="cv-btn-print" type="button">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-          <span>Imprimir / Guardar en PDF</span>
-        </button>
-        <a href="https://wa.me/595975351571?text=Hola%20Joel,%20vi%20tu%20CV%20en%20C%23%20.NET." target="_blank" rel="noopener noreferrer" class="cv-btn-contact">
+        <a href="https://www.linkedin.com/in/joelromerofranco" target="_blank" rel="noopener noreferrer" class="btn-action btn-action-linkedin" title="Visitar LinkedIn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/joelromerofranco" target="_blank" rel="noopener noreferrer" class="btn-action btn-action-github" title="Visitar GitHub">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://wa.me/595975351571?text=Hola%20Joel,%20vi%20tu%20curr%C3%ADculum%20C%23%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener noreferrer" class="btn-action btn-action-wa" title="WhatsApp">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span>WhatsApp</span>
         </a>
+
+        <a href="mailto:joel.romerorf@gmail.com" class="btn-action btn-action-mail" title="Email">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>Email</span>
+        </a>
+
+        <button onclick="window.print()" class="btn-action btn-action-print" type="button" title="Imprimir A4 o guardar en PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>Imprimir A4</span>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- HOJA DE CURRÍCULUM -->
+  <!-- CONTENEDOR DE LA HOJA DE CURRÍCULUM -->
   <main class="cv-page-wrapper">
     <div class="cv-sheet">
       <article>
         
-        <!-- CABECERA DE CONTACTO Y FOTO (FACITEC UNICAN) -->
+        <!-- CABECERA DE CONTACTO Y FOTO (FORMAL, SIN ICONOS EN LA HOJA) -->
         <header class="cv-header">
           <div class="cv-header-left">
             <h1 class="cv-name">Joel Romero Franco</h1>
-            <div class="cv-target-role">Desarrollador Full Stack • Especialidad en C# / .NET</div>
+            <div class="cv-target-role">Desarrollador Full Stack • Especialidad en C# y .NET</div>
             
             <div class="cv-contact-list">
               <div><strong>Celular:</strong> 0975 351571</div>
               <div><strong>Correo:</strong> <a href="mailto:joel.romerorf@gmail.com">joel.romerorf@gmail.com</a></div>
               <div><strong>Dirección:</strong> Barrio Pionero, Katuete, Canindeyú Py</div>
               <div><strong>GitHub:</strong> <a href="https://github.com/joelromerofranco" target="_blank" rel="noopener noreferrer">github.com/joelromerofranco</a></div>
+              <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joelromerofranco" target="_blank" rel="noopener noreferrer">linkedin.com/in/joelromerofranco</a></div>
             </div>
           </div>
 
           <div class="cv-header-right">
-            <div class="cv-photo-frame" title="Joel Romero Franco - FACITEC UNICAN">
-              <img src="img/Perfil.jpg" alt="Foto de Joel Romero Franco en FACITEC UNICAN" class="cv-photo">
+            <div class="cv-photo-frame" title="Joel Romero Franco">
+              <img src="img/Perfil.jpg" alt="Foto de Joel Romero Franco" class="cv-photo">
             </div>
           </div>
         </header>
@@ -64,62 +88,28 @@
         <section class="cv-section">
           <h2 class="cv-section-title">Perfil Profesional</h2>
           <p class="cv-paragraph">
-            Persona responsable, organizada y comprometida. Estudiante avanzado de Análisis de Sistemas Informáticos en la Universidad Nacional de Canindeyú (FACITEC - UNICAN), actualmente en proceso de elaboración de tesis sobre seguridad en aplicaciones informáticas. Cuento con una sólida formación inicial en ingeniería de software forjada con el lenguaje Java y el paradigma de Programación Orientada a Objetos (POO).
-          </p>
-          <p class="cv-paragraph">
-            En la actualidad me desempeño y enfoco activamente como <strong>Desarrollador Full Stack</strong> con especialidad en <strong>C# y el ecosistema .NET</strong>. En el <strong>Backend</strong> domino el desarrollo de APIs RESTful escalables con <strong>ASP.NET Core</strong> y persistencia mediante <strong>Entity Framework Core</strong> sobre bases de datos relacionales (SQL Server / PostgreSQL). En el <strong>Frontend</strong> desarrollo interfaces web interactivas y responsivas utilizando <strong>HTML5, CSS3, JavaScript</strong> y frameworks de estilos, garantizando una integración fluida con los servicios backend.
-          </p>
-          <p class="cv-paragraph">
-            Cuento con más de 8 años de trayectoria laboral continua en la empresa Ciabay S.A. en el sector de inventarios y logística de repuestos agrícolas, lo que me aporta madurez profesional, trabajo coordinado con diferentes áreas operativas y una sólida capacidad para comprender la lógica de negocio y resolver problemas de forma práctica y estructurada. Cuento con disponibilidad inmediata y excelente predisposición para incorporarme y asumir nuevos desafíos de desarrollo.
+            Desarrollador Full Stack con formación en Análisis de Sistemas en UNICAN y tesis en seguridad informática. Especializado en backend con C# y .NET 8 para APIs REST escalables con Entity Framework Core y SQL Server, y desarrollo frontend con JavaScript, HTML5 y CSS3. Cuento con 8 años de trayectoria laboral en Ciabay S.A. en gestión logística e inventarios, aportando madurez profesional, análisis y trabajo en equipo. Disponibilidad inmediata para incorporación.
           </p>
         </section>
 
-        <!-- HABILIDADES TÉCNICAS & FRAMEWORKS -->
+        <!-- HABILIDADES TÉCNICAS -->
         <section class="cv-section">
-          <h2 class="cv-section-title">Conocimientos Técnicos &amp; Frameworks</h2>
-          <ul class="cv-list">
-            <li>
-              <strong>Frameworks &amp; Tecnologías Backend:</strong> C# (versiones modernas), plataforma <strong>.NET 8 / .NET Core</strong>, framework <strong>ASP.NET Core Web API</strong> para desarrollo de microservicios y servicios RESTful, <strong>Entity Framework Core (EF Core)</strong> para mapeo objeto-relacional (ORM), LINQ (Language Integrated Query) y arquitectura en capas.
-            </li>
-            <li>
-              <strong>Tecnologías &amp; Frameworks Frontend:</strong> HTML5 semántico, CSS3 avanzado (Flexbox, CSS Grid), <strong>JavaScript (ES6+)</strong>, maquetación responsiva con <strong>Bootstrap</strong>, consumo asíncrono de APIs mediante Fetch API / AJAX y validación de formularios web.
-            </li>
-            <li>
-              <strong>Bases de Datos Relacionales:</strong> <strong>Microsoft SQL Server</strong>, <strong>PostgreSQL</strong>, diseño relacional de tablas, integridad referencial, transacciones ACID, consultas SQL complejas (JOINs, agrupamientos) y migraciones Code-First con EF Core.
-            </li>
-            <li>
-              <strong>Herramientas de Desarrollo &amp; Versionado:</strong> <strong>Git</strong>, <strong>GitHub</strong>, Visual Studio, Visual Studio Code, Postman para documentación y pruebas de endpoints HTTP.
-            </li>
-            <li>
-              <strong>Arquitectura &amp; Buenas Prácticas:</strong> Programación Orientada a Objetos (POO), principios <strong>SOLID</strong>, separación de responsabilidades, inyección de dependencias (DI), manejo estructurado de excepciones y código limpio (Clean Code).
-            </li>
-          </ul>
-        </section>
-
-        <!-- FORMACIÓN ACADÉMICA E IDIOMAS -->
-        <section class="cv-section">
-          <div class="cv-columns-2">
-            <div class="cv-col">
-              <h2 class="cv-section-title">Formación Académica</h2>
-              <ul class="cv-list">
-                <li>
-                  <strong>Universidad Nacional Canindeyú (UNICAN)</strong><br>
-                  Facultad de Ciencia y Tecnología (FACITEC).
-                </li>
-                <li>
-                  <strong>Carrera:</strong> Análisis de sistemas informático.<br>
-                  <em>Proceso de Tesis</em> (Seguridad en Aplicaciones)
-                </li>
-              </ul>
+          <h2 class="cv-section-title">Habilidades Técnicas</h2>
+          <div class="cv-skills-list">
+            <div class="cv-skill-row">
+              <strong>Backend:</strong> C#, .NET 8, ASP.NET Core Web API, Entity Framework Core, LINQ, APIs REST.
             </div>
-
-            <div class="cv-col">
-              <h2 class="cv-section-title">Idiomas</h2>
-              <ul class="cv-list">
-                <li><strong>Guaraní</strong> (Nativo)</li>
-                <li><strong>Castellano</strong> (Nativo)</li>
-                <li><strong>Portugués</strong> (Competencia comunicativa y comercial)</li>
-              </ul>
+            <div class="cv-skill-row">
+              <strong>Frontend:</strong> JavaScript moderno, HTML5 semántico, CSS3, Bootstrap, consumo de APIs Fetch y AJAX.
+            </div>
+            <div class="cv-skill-row">
+              <strong>Bases de Datos:</strong> Microsoft SQL Server, PostgreSQL, modelado relacional, consultas SQL, migraciones Code-First.
+            </div>
+            <div class="cv-skill-row">
+              <strong>Herramientas:</strong> Git, GitHub, Visual Studio, VS Code, Postman.
+            </div>
+            <div class="cv-skill-row">
+              <strong>Arquitectura y Buenas Prácticas:</strong> Programación Orientada a Objetos, principios SOLID, inyección de dependencias, Clean Code.
             </div>
           </div>
         </section>
@@ -128,66 +118,88 @@
         <section class="cv-section">
           <h2 class="cv-section-title">Experiencia Laboral</h2>
           
-          <div style="margin-bottom: 0.6rem;">
-            <div class="cv-job-title">Encargado de depósito de Repuestos • Empresa Ciabay S.A. Ciudad Katuete</div>
-            <div class="cv-job-dates"><strong>Año:</strong> 2018 <strong>Hasta:</strong> 2026</div>
+          <div class="cv-job-header">
+            <div class="cv-job-title">Encargado de Depósito y Logística • <span class="cv-job-company">Ciabay S.A.</span> Ciudad Katuete</div>
+            <div class="cv-job-dates">2018 a 2026</div>
           </div>
 
           <ul class="cv-list">
-            <li>Organización de tareas diarias y planificación de actividades según las necesidades del área.</li>
-            <li>Atención y seguimiento de consultas de clientes y colaboradores.</li>
-            <li>Trabajo coordinado con diferentes sectores de la empresa, manteniendo una comunicación efectiva y responsable.</li>
-            <li>Coordinación y seguimiento de tareas para mantener el orden.</li>
-            <li>Control y actualización de inventario y seguimiento de movimientos de repuestos.</li>
-            <li>Registro y manejo de información relacionada con entradas y salidas de productos.</li>
-            <li>Preparación y control de pedidos, documentación y requerimientos internos.</li>
-            <li>Manejo de catálogos digitales y sistemas utilizados para la consulta de productos y repuestos.</li>
-            <li>Resolución de inconvenientes y consultas relacionadas con stock y productos.</li>
+            <li>Control y auditoría de inventario físico y digital, asegurando exactitud de stock y trazabilidad de repuestos.</li>
+            <li>Operación de sistemas ERP empresariales y catálogos digitales especializados para consultas técnicas.</li>
+            <li>Planificación diaria, control de documentación mercantil y despacho eficiente de pedidos.</li>
+            <li>Coordinación entre sucursales, administración y atención personalizada a clientes y proveedores.</li>
+            <li>Resolución estructurada de contingencias operativas y optimización de tiempos de entrega.</li>
           </ul>
         </section>
 
-        <!-- CURSOS Y CERTIFICACIONES -->
+        <!-- FORMACIÓN ACADÉMICA E IDIOMAS -->
         <section class="cv-section">
-          <h2 class="cv-section-title">Cursos y Certificaciones</h2>
-          <ul class="cv-list">
-            <li>
-              <strong>Curso de manejo y control de stock.</strong> Conocimiento de producto, manejo y uso adecuado de catálogos digitales. Modalidad e-learning — <em>CNH_academy</em>.
-            </li>
-            <li>
-              <strong>Manejo Seguro de Maquinarias y Logística Operativa.</strong> <em>RODOMAQ S.A.</em>
-            </li>
-            <li>
-              <strong>Link de certificados verificables:</strong> 
-              <a href="https://drive.google.com/drive/folders/13sbsxVXEIdUNyNjRHzvhX-LD864wap5A?usp=sharing" target="_blank" rel="noopener noreferrer">
-                drive.google.com/certificados-joel-romero
-              </a>
-            </li>
-          </ul>
+          <div class="cv-columns-2">
+            
+            <div class="cv-col">
+              <h2 class="cv-section-title">Formación Académica</h2>
+              <div style="font-size: 10.2pt; line-height: 1.4;">
+                <strong style="color: #000000;">Análisis de Sistemas Informáticos</strong><br>
+                Facultad de Ciencia y Tecnología, Universidad Nacional de Canindeyú<br>
+                <strong>Tesis en desarrollo:</strong> Seguridad en Aplicaciones Web
+              </div>
+            </div>
+
+            <div class="cv-col">
+              <h2 class="cv-section-title">Idiomas</h2>
+              <ul class="cv-list" style="margin-bottom: 0;">
+                <li><strong>Castellano:</strong> Nativo</li>
+                <li><strong>Guaraní:</strong> Nativo</li>
+                <li><strong>Portugués:</strong> Profesional y comercial</li>
+              </ul>
+            </div>
+
+          </div>
         </section>
 
-        <!-- REFERENCIAS -->
-        <section class="cv-section">
-          <h2 class="cv-section-title">Referencias</h2>
-          <table class="cv-refs-table">
-            <tbody>
-              <tr>
-                <td class="ref-name">Gloria Fiori</td>
-                <td class="ref-tel">Cel. 0983 178013</td>
-              </tr>
-              <tr>
-                <td class="ref-name">Federico Bordon</td>
-                <td class="ref-tel">Cel. 0982 750215</td>
-              </tr>
-              <tr>
-                <td class="ref-name">Christian De Los Santos Barreto</td>
-                <td class="ref-tel">Cel. 0975 548658</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- CURSOS Y REFERENCIAS -->
+        <section class="cv-section" style="margin-bottom: 0;">
+          <div class="cv-columns-2">
+            
+            <div class="cv-col">
+              <h2 class="cv-section-title">Cursos y Certificaciones</h2>
+              <ul class="cv-list" style="margin-bottom: 0;">
+                <li><strong>Gestión de Stock y Catálogos Digitales:</strong> CNH Academy</li>
+                <li><strong>Manejo de Maquinarias y Logística:</strong> Rodomaq S.A.</li>
+                <li>
+                  <a href="https://drive.google.com/drive/folders/13sbsxVXEIdUNyNjRHzvhX-LD864wap5A?usp=sharing" target="_blank" rel="noopener noreferrer" class="cv-link">
+                    Ver certificados verificables en Google Drive
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-col">
+              <h2 class="cv-section-title">Referencias Laborales</h2>
+              <table class="cv-refs-table">
+                <tbody>
+                  <tr>
+                    <td class="ref-name">Gloria Fiori</td>
+                    <td class="ref-tel"><a href="tel:0983178013">0983 178013</a></td>
+                  </tr>
+                  <tr>
+                    <td class="ref-name">Federico Bordon</td>
+                    <td class="ref-tel"><a href="tel:0982750215">0982 750215</a></td>
+                  </tr>
+                  <tr>
+                    <td class="ref-name">Christian De Los Santos</td>
+                    <td class="ref-tel"><a href="tel:0975548658">0975 548658</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
         </section>
 
       </article>
     </div>
   </main>
+
 </body>
 </html>
