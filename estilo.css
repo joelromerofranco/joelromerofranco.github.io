@@ -190,6 +190,174 @@ body {
 }
 
 /* ==========================================================================
+   SECCIÓN HERO / BIENVENIDA PROFESIONAL
+   ========================================================================== */
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.45); }
+  50%      { box-shadow: 0 0 0 12px rgba(37, 99, 235, 0); }
+}
+
+.hero-profile {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  padding: 3.5rem 1.5rem 3rem;
+  text-align: center;
+  font-family: var(--font-ui);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative subtle grid overlay */
+.hero-profile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-profile-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  animation: heroFadeIn 0.7s ease-out both;
+}
+
+.hero-photo-wrapper {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 1.2rem;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #2563eb, #10b981);
+  animation: heroPulse 3s ease-in-out infinite;
+}
+
+.hero-photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  display: block;
+  border: 3px solid #0f172a;
+}
+
+.hero-name {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.3rem;
+}
+
+.hero-tagline {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
+.hero-location {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.hero-location svg {
+  flex-shrink: 0;
+}
+
+/* Social pills row */
+.hero-socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.25s ease;
+  font-family: var(--font-ui);
+}
+
+.hero-pill:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.hero-pill svg {
+  flex-shrink: 0;
+}
+
+/* Scroll CTA */
+.hero-scroll-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.3rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--font-ui);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+
+.hero-scroll-cta:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+}
+
+.hero-scroll-cta svg {
+  animation: bounceDown 1.5s ease-in-out infinite;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(4px); }
+}
+
+/* Divider wave between hero and CV */
+.hero-divider {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -2px;
+}
+
+/* ==========================================================================
    CONTENEDOR DE LA HOJA DE CURRÍCULUM (MÁRGENES AMPLIADOS Y ELEGANTES)
    ========================================================================== */
 .cv-page-wrapper {
@@ -426,7 +594,7 @@ body {
 @media print {
   @page {
     size: A4 portrait;
-    margin: 11mm 14mm 11mm 14mm; /* Margen amplio, equilibrado y formal */
+    margin: 15mm 14mm 12mm 14mm; /* Mayor margen superior para centrado visual en A4 */
   }
 
   *, *::before, *::after {
@@ -443,7 +611,9 @@ body {
   }
 
   .cv-toolbar,
-  .no-print {
+  .no-print,
+  .hero-profile,
+  .hero-divider {
     display: none !important;
   }
 
@@ -641,5 +811,31 @@ body {
   .cv-job-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-profile {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .hero-photo-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-name {
+    font-size: 1.45rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.88rem;
+  }
+
+  .hero-socials {
+    gap: 0.4rem;
+  }
+
+  .hero-pill {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.7rem;
   }
 }
